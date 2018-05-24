@@ -1,0 +1,19 @@
+FROM ubuntu:18.04
+
+RUN apt-get update
+
+RUN apt-get install -y -qq \
+    build-essential \
+    vim \
+    wget \
+    curl \
+    git \
+    mercurial \
+    python3 \
+    htop \
+    unzip \
+    net-tools
+
+ADD bashrc /root/.bashrc
+
+
