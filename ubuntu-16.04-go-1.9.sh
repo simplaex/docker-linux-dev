@@ -1,7 +1,7 @@
 #!/bin/bash
 
 docker run \
-    --name go-linux \
+    --name ubuntu16-go1.9 \
     -v ${HOME}/.ssh:/root/.ssh:ro \
     -v ${HOME}/go1.9-ubuntu16:/root/go \
     -it \

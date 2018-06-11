@@ -5,5 +5,5 @@ RUN curl https://storage.googleapis.com/golang/go1.9.1.linux-amd64.tar.gz -o /tm
     tar xfz /tmp/go1.9.tar.gz; \
     rm /tmp/go1.9.tar.gz
 
-RUN echo 'export PATH=${PATH}:/opt/go/bin' >> /root/.bashrc
+ENV PATH="/opt/go/bin:${PATH}"
 
